@@ -1,0 +1,81 @@
+<html>
+    <script>
+
+        console.log("Hello, world 555555555");
+        // pseudocode
+        // 1.mathrand to gentrare random num btew 0 -1
+        // 2. multiply by 100 to round instanceo
+        // 3.logic is if numb betw 0 - 33 rock 
+        //  btwe 34 - 67 paper 
+        //  btwe 68 - 100 scissors
+        // 4. get user input (rock or paper or scissors)
+        // 5.logic is if computer choose and user choose
+        //     print drew, you win , computer wins
+
+        //     i am too lazy to figureout how the functions worked probably need to watch a javascript chrash course for basics
+
+
+        let getComputerChoice = Math.round(Math.random() * 100);
+        console.log(getComputerChoice);
+        let ComputerChoice = "text";
+
+        if (getComputerChoice < 34) {
+            ComputerChoice = "Rock";
+            console.log(ComputerChoice);
+        }
+        else if (getComputerChoice > 67 ){
+            ComputerChoice = "Paper";
+            console.log(ComputerChoice);
+        }
+        else {
+            ComputerChoice = "Scissors";
+            console.log(ComputerChoice);
+        }
+
+        let getHumanChoice = prompt();
+        let HumanChoice = 0;
+
+        if (getHumanChoice == 1) {
+            HumanChoice = "Rock";
+            console.log(HumanChoice);
+        }
+        else if (getHumanChoice == 2 ){
+            HumanChoice = "Paper";
+            console.log(HumanChoice);
+        }
+        else if (getHumanChoice == 3 ){
+            HumanChoice = "Scissors";
+            console.log(HumanChoice);
+        }
+        else {
+            
+            console.log("enter number betweeen 1 and 2");
+        }
+
+
+
+        if (ComputerChoice == HumanChoice) {
+            console.log("Drew");
+        }
+        else if (ComputerChoice == "Rock" && HumanChoice == "Paper") {
+            console.log("You win");
+        }
+        else if (ComputerChoice == "Rock" && HumanChoice == "Scissors") {
+            console.log("Computer wins");
+        }
+        else if (ComputerChoice == "Paper" && HumanChoice == "Scissors") {
+            console.log("You win");
+        }
+        else if (ComputerChoice == "Paper" && HumanChoice == "Rock") {
+            console.log("Computer wins");
+        }
+        else if (ComputerChoice == "Scissors" && HumanChoice == "Rock") {
+            console.log("You win");
+        }
+        else if (ComputerChoice == "Scissors" && HumanChoice == "Paper") {
+            console.log("Computer wins");
+        }
+
+
+    </script>
+</html>
